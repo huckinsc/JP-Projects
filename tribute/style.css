@@ -2,3 +2,9 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 250px) {
+  img {
+    size: 50px;
+  }
+}
