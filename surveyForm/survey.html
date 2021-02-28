@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Survey Form</h1>
+
+      <p id="description">
+        Responsive web desig, project 2. <br />
+        Building a Survey form.
+      </p>
+    </div>
+    <div>
+      <form id="survery-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Name" required /><br />
+        <label for="email" id="email-label">Email:</label>
+        <input
+          type="email"
+          id="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please prodive a valid e-mail address."
+          placeholder="E-mail"
+          required
+        /><br />
+        <label for="number" id="number-label">Number:</label>
+        <input
+          type="number"
+          id="number"
+          min="5"
+          max="10"
+          title="Please enter a between 5 and 10."
+          placeholder="Number"
+        /><br />
+        <select name="" id="" id="dropdown">
+          <option value="one">One</option>
+          <option value="two">Two</option>
+          <option value="three">three</option>
+          <option value="four">four</option>
+        </select>
+        <div id="radio-buttons">
+          <input type="radio" name="radio" id="radio-button-1" checked /><label
+            for="name"
+            >Radio 1</label
+          >
+          <input type="radio" name="radio" id="radio-button-2" /><label
+            for="name"
+            >Radio 2</label
+          >
+          <input type="radio" name="radio" id="radio-button-3" /><label
+            for="name"
+            >Radio 2</label
+          >
+        </div>
+        <div id="checkboxes">
+          <input
+            type="checkbox"
+            name="checkboxes"
+            id="checkbox-1"
+            value="check1"
+          /><label>Check 1</label>
+          <input
+            type="checkbox"
+            name="checkboxes"
+            id="checkbox-2"
+            value="check2"
+            checked
+          /><label>Check 2</label>
+          <input
+            type="checkbox"
+            name="checkboxes"
+            id="checkbox-3"
+            value="check3"
+          /><label>Check 3</label>
+        </div>
+        <div>
+          <label>Comments</label><br />
+          <textarea id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
